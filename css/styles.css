@@ -1,5 +1,6 @@
 :root {
   --bg: #0d1117;
+  --bg2: #232934;
   --text: #e6edf3;
   --accent: #58a6ff;
   --green: #7ee787;
@@ -23,8 +24,20 @@ a {
   text-decoration: underline;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg2);
+    position: sticky;
+    top: 0;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
 .terminal-box {
-  background: #0d1117;
+  background: var(--bg);
   border: 1px solid #30363d;
   border-radius: 6px;
   padding: 20px;
