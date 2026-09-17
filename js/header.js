@@ -5,8 +5,8 @@ class SiteHeader extends HTMLElement {
             <header>
                 <nav>
                     <ul>
-                        <li><a href="/">Start</a></li>
-                        <li><a href="/site/projects">Projects</a></li>
+                        <li><a href="/" class="nav-link">Start</a></li>
+                        <li><a href="/site/projects" class="nav-link">Projects</a></li>
                     </ul>
                 </nav>
             </header>

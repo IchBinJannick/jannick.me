@@ -36,6 +36,43 @@ header {
     border-radius: 6px;
 }
 
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  background: rgba(88, 166, 255, 0.1); 
+}
+
+
+.nav-btn {
+  color: var(--green);
+  border: 1px solid var(--green);
+  background: var(--bg);
+}
+
+.nav-btn:hover {
+  background: var(--green);
+  color: var(--bg);
+  box-shadow: 0 0 10px rgba(126, 231, 135, 0.3);
+}
+
 .terminal-box {
   background: var(--bg);
   border: 1px solid #30363d;
