@@ -1,5 +1,6 @@
 :root {
   --bg: #0d1117;
+  --bg2: #232934;
   --text: #e6edf3;
   --accent: #58a6ff;
   --green: #7ee787;
@@ -23,8 +24,69 @@ a {
   text-decoration: underline;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--bg2);
+    position: sticky;
+    top: 0;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    z-index: 10;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--accent);
+  background: rgba(88, 166, 255, 0.1); 
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
+}
+
+.nav-link.active {
+    color: var(--green);
+    border-color: var(--green);
+    background: rgba(126, 231, 135, 0.1);
+}
+
+
+.nav-btn {
+  color: var(--green);
+  border: 1px solid var(--green);
+  background: var(--bg);
+}
+
+.nav-btn:hover {
+  background: var(--green);
+  color: var(--bg);
+  box-shadow: 0 0 10px rgba(126, 231, 135, 0.3);
+}
+
 .terminal-box {
-  background: #0d1117;
+  background: var(--bg);
   border: 1px solid #30363d;
   border-radius: 6px;
   padding: 20px;
@@ -51,4 +113,20 @@ a {
 
 @keyframes blink {
   50% { opacity: 0; }
+}
+
+@media (max-width: 520px) {
+    header {
+        padding: 0.75rem 1rem;
+    }
+
+    header nav ul {
+        gap: 4px;
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        padding: 6px 8px;
+        font-size: 0.8rem;
+    }
 }
