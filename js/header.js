@@ -3,9 +3,9 @@ class SiteHeader extends HTMLElement {
         this.innerHTML = 
         `
             <header>
-                <nav aria-label="main-nav">
-                    <ul>
-                        <a href="/" class="site-title">Jannick.Me</a>
+                <nav aria-label="Main">
+                    <a href="/">Jannick.Me</a>
+                    <ul id="nav-menu">
                         <li><a href="/" class="nav-link">Start</a></li>
                         <li><a href="/site/projects" class="nav-link">Projects</a></li>
                     </ul>
