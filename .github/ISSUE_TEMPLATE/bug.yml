@@ -1,38 +1,38 @@
-name: "🐛 Bug"
-description: Etwas funktioniert nicht wie erwartet.
+name: "Bug"
+description: Something is not behaving as it should
 title: "[Bug] "
 labels: ["bug"]
 body:
   - type: textarea
     id: what
     attributes:
-      label: Was ist kaputt?
-      placeholder: "z. B. Header überlappt den Content auf Mobile (< 400px)"
+      label: What is broken?
+      placeholder: "e.g. Header overlapping Content on Mobile (< 400px)"
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Wie reproduzierst du es?
+      label: How to reproduce?
       placeholder: |
-        1. Seite auf iPhone SE Breite öffnen
-        2. Nach unten scrollen
-        3. Header liegt über der Überschrift
+        1. Open site on mobile width
+        2. scroll down
+        3. Header overlapping title
     validations:
       required: false
 
   - type: textarea
     id: expected
     attributes:
-      label: Was sollte stattdessen passieren?
+      label: What should happen instead?
     validations:
       required: false
 
   - type: dropdown
     id: where
     attributes:
-      label: Wo aufgefallen?
+      label: Where recognized?
       options:
         - "Lokal (dev)"
         - "Vercel Preview"
@@ -43,10 +43,10 @@ body:
   - type: dropdown
     id: severity
     attributes:
-      label: Wie schlimm?
+      label: How bad?
       options:
-        - "Kosmetisch (kann warten)"
-        - "Stört (sollte bald gefixt werden)"
-        - "Blockiert (Seite wirkt kaputt/unprofessionell für Besucher)"
+        - "Cosmetic (can wait)"
+        - "Annoying (should be fixed soon)"
+        - "Blocking (site looks broken/unprofesional for viewer)"
     validations:
       required: true
