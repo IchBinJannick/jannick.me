@@ -1,0 +1,29 @@
+name: "🧹 Chore / Refactor"
+description: Aufräumen, technische Schulden, Dinge die "eigentlich" gemacht werden sollten.
+title: "[Chore] "
+labels: ["chore"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Was soll aufgeräumt/verändert werden?
+      placeholder: "z. B. CSS-Werte durch Variablen aus variables.css ersetzen"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Warum jetzt und nicht später?
+      description: Ehrlich sein – wenn dir keine gute Antwort einfällt, ist es evtl. eher "Später/Nice-to-have".
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: risk
+    attributes:
+      label: Checks vor dem Mergen
+      options:
+        - label: Seite lädt noch fehlerfrei (lokal getestet)
+        - label: Vercel Preview überprüft
+        - label: Keine sichtbaren Layout-Brüche auf Mobile

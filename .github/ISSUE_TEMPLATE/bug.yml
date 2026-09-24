@@ -1,0 +1,52 @@
+name: "🐛 Bug"
+description: Etwas funktioniert nicht wie erwartet.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Was ist kaputt?
+      placeholder: "z. B. Header überlappt den Content auf Mobile (< 400px)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Wie reproduzierst du es?
+      placeholder: |
+        1. Seite auf iPhone SE Breite öffnen
+        2. Nach unten scrollen
+        3. Header liegt über der Überschrift
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Was sollte stattdessen passieren?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Wo aufgefallen?
+      options:
+        - "Lokal (dev)"
+        - "Vercel Preview"
+        - "Production (jannick.me)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Wie schlimm?
+      options:
+        - "Kosmetisch (kann warten)"
+        - "Stört (sollte bald gefixt werden)"
+        - "Blockiert (Seite wirkt kaputt/unprofessionell für Besucher)"
+    validations:
+      required: true

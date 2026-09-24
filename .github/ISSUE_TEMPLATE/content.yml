@@ -1,0 +1,45 @@
+name: "✍️ Content (Blogpost / Projekt-Eintrag)"
+description: Neuer Blogpost, Case Study oder Projekt-Eintrag für die Seite.
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Art des Inhalts
+      options:
+        - "Blogpost"
+        - "Projekt / Case Study"
+        - "About-Seite Update"
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: Worum geht's?
+      placeholder: "z. B. Wie ich mein Portfolio von Vanilla JS auf Vite/TypeScript umgestellt habe"
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Grobe Gliederung (Stichpunkte reichen)
+      placeholder: |
+        - Problem/Ausgangslage
+        - Was ich versucht habe
+        - Was ich gelernt habe
+        - Tech-Stack
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Vor Veröffentlichung
+      options:
+        - label: Rechtschreibung/Grammatik geprüft
+        - label: Code-Snippets getestet (funktionieren wirklich so)
+        - label: Bilder/Screenshots eingebunden (falls nötig)
+        - label: Auf Mobile lesbar geprüft
