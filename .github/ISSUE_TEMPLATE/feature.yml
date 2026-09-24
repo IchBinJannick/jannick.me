@@ -1,0 +1,59 @@
+name: "✨ Feature"
+description: Eine neue Funktion oder Seite, die du bauen willst.
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Was soll gebaut werden?
+      description: Kurz und konkret. Eine Sache pro Issue, nicht "die ganze Projects-Seite".
+      placeholder: "z. B. Navigation im <site-header> mit aktivem Link-Zustand"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Warum? / Welches Problem löst das?
+      placeholder: "z. B. aktuell gibt es keine Möglichkeit zwischen Seiten zu navigieren"
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Fertig, wenn...
+      description: 2-4 konkrete, abhakbare Kriterien. Das ist dein Kompass, wann du aufhören kannst weiterzubasteln.
+      placeholder: |
+        - [ ] Links zu Home/Projects/About/Contact vorhanden
+        - [ ] aktiver Link visuell hervorgehoben
+        - [ ] funktioniert auf Mobile
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: Passt es überhaupt in die aktuelle Phase, oder ist es eigentlich ein Punkt für später?
+      options:
+        - "Phase 0 – Fundament (HTML/CSS/JS)"
+        - "Phase 1 – Tooling/TypeScript"
+        - "Phase 2 – React"
+        - "Phase 3 – Next.js"
+        - "Später / Nice-to-have"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: size
+    attributes:
+      label: Geschätzte Größe
+      description: Ehrlich schätzen. Wenn's "groß" ist, überleg ob du es in mehrere Issues splitten solltest.
+      options:
+        - "Klein (< 1 Stunde)"
+        - "Mittel (1-3 Stunden)"
+        - "Groß (> 3 Stunden – ggf. splitten!)"
+    validations:
+      required: true

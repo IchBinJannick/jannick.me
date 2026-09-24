@@ -1,0 +1,45 @@
+name: "🚀 Migrations-Schritt"
+description: Ein Schritt auf dem Weg von Vanilla JS zu TypeScript/React/Next.js.
+title: "[Migration] "
+labels: ["migration"]
+body:
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Welcher Umstiegsschritt?
+      options:
+        - "Phase 1 – Vite Setup"
+        - "Phase 1 – JS-Datei zu TS konvertieren"
+        - "Phase 2 – React Einführung"
+        - "Phase 2 – Komponente zu React migrieren"
+        - "Phase 3 – Next.js Umzug"
+        - "Sonstiges Tooling (ESLint, Prettier, CI...)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: Was genau wird migriert/eingeführt?
+      placeholder: "z. B. header.js → Header.tsx als React-Komponente"
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Was könnte dabei kaputt gehen?
+      description: Bewusst vorher nachdenken, bevor du im laufenden Betrieb umbaust.
+      placeholder: "z. B. Navigation-Styling könnte sich durch neue Klassen-Namen verschieben"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: process
+    attributes:
+      label: Migrations-Workflow (siehe Timeline)
+      options:
+        - label: Auf eigenem Branch entwickelt
+        - label: Vercel Preview-URL funktioniert einwandfrei
+        - label: Alte Version bleibt bis zum Merge unangetastet nutzbar
+        - label: Nach Merge: alte Datei(en) aufgeräumt/entfernt
