@@ -4,15 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/term.css">
-    <title>Jannick.Me</title>
+    <title>Home | Jannick</title>
 </head>
 <body>
     <site-header></site-header>
     <main>
-        <div class="t-callout t-info">
-            <p>Hey, I am Jannick. A Computer Science student from Germany.</p>
-            <p>You've reached my website where I will post my recent projects, thoughts and ideas.</p>  
-        </div>
+        <section class="t-card hero">
+            <h1><code>jannick@me:~$ whoami</code></h1>
+            <p>
+                Hi, I'm <strong>Jannick</strong>. I'm a Computer Science student at Ruhr-Universität Bochum in my 5th semester, passionate about software development, hardware development, and building cool side projects.
+            </p>
+            <p>
+                <a href="/site/about"><button>Learn more about me &rarr;</button></a>
+                <a href="/site/projects/"><button>Learn about my Projects &rarr;</button></a>
+            </p>
+        </section>
+        <section class="t-callout t-info">
+            <strong>Currently focused on:</strong>
+            Expanding my knowledge in Web Development (HTML/CSS, JS, TS & Frameworks).
+        </section>
+
+        
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="t-grid">
+                <article class="t-card">
+                    <h3><code>01. jannick.me</code></h3>
+                    <p>My personal portfolio built with clean HTML and TermCSS. A testing ground for modern web features and simple terminal-like design.</p>
+                    <p>
+                        <span class="t-badge t-info">HTML</span>
+                        <span class="t-badge t-info">CSS</span>
+                        <span class="t-badge t-info">JS</span>
+                    </p>
+                    <p>
+                        <a href="https://github.com/IchBinJannick/jannick.me"><button>View Code &rarr;</button></a>
+                    </p>
+                </article>
+            </div>
+        </section>
+        
+        <section class="t-card">
+            <h2>Get in Touch</h2>
+            <p>
+                Feel free to reach out for collaborations, project ideas, or just a chat about CS or gaming!
+            </p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:jannick@jannick.me">jannick@jannick.me</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/IchBinJannick" target="_blank">github.com/IchBinJannick</a></li>
+                <li><strong>Discord:</strong> <a href="https://discord.com/users/ichbinjannick" target="_blank" rel="noopener">@IchBinJannick</a></li>
+            </ul>
+        </section>
     </main>
 
     <site-footer></site-footer>
