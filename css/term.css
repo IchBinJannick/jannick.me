@@ -838,3 +838,20 @@ h1, h2, h3, h4, h5, h6 {
 .card-header h3 {
     margin: 0;
 }
+
+.button {
+    display: inline-block;
+    background-color: var(--t-accent);
+    color: var(--t-bg);
+    border: 0;
+    padding: .25em .5em;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: none;
+}
