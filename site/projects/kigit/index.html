@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/term.css">
+    <title>KiGit | Jannick</title>
+</head>
+<body>
+    <site-header></site-header>
+
+    <main>
+
+        <div class="card-header">
+            <h1><code>KiGit</code></h1>
+            <div>
+                <span class="t-badge t-warn">On-Hold</span>
+                <span class="t-badge t-success">LIVE</span>
+                <a href="https://github.com/IchBinJannick/KiGit" class="button">View Code &rarr;</a>
+            </div>
+        </div>
+        
+        <p><small>Started: <time datetime="2026-04">April 2026</time></small></p>
+
+        <section>
+            <p>
+                A University project for the "Software Engineering Lab" course.
+            </p>
+        </section>
+
+        <section class="t-card">
+            <details open>
+                <summary>Background</summary>
+                <p>
+                    For the course "Software Engineering Lab" we sat together with 6 students. In a first lecture we got introduced to the course and the companies behind the projects. After this we could choose our preference for each project. At the end we got selected for one project with 5 others.
+                </p>
+            </details>
+        </section>
+
+        <section class="t-card">
+            <details open>
+                <summary>Goal</summary>
+                <p>
+                    We worked together with <a href="https://www.auto-intern.de/">Auto-Intern</a> on a CLI-Tool which could help hardware developer with there <a href="https://www.kicad.org/">KiCad</a> projects. These projects used Git version control between schematic and pcb version. With Git it was hard to locate changes using <code>git diff</code>. 
+                </p>
+                <p>
+                    KiGit shows hardware developers which changes were made between versions in a simple and easy to understand way.
+                </p>
+            </details>
+        </section>
+
+        <section class="t-card">
+            <details open>
+                <summary>SCRUM</summary>
+                <p>
+                    Our development was build around the agile development framework SCRUM. It focuses around short sprints after which a new iteration or increment of software should result of.
+                </p>
+            </details>
+            <details open>
+                <summary>Sprints</summary>
+                <p>
+                    Each sprint was 3 weeks long. Through this 3 weeks we had time to develop our software. In each sprint our team of developers (us 6 students) sat together 2 times a week to discuss who does what and how, if anyone has any trouble and if our goal for this sprint is possible or if we need to reduce our tasks to achieve the bear minimum. After each sprint we gave a team member of Auto-Intern our results so they could test them.
+                </p>
+            </details>
+            <details open>
+                <summary>Sprint Review</summary>
+                <p>
+                    After each sprint we met with our associate of Auto-Intern and discuessed what was good and what went wrong. We reviewed our new additions and what we were'nt been able to implement yet.
+                </p>
+            </details>
+            <details open>
+                <summary>Sprint Planning</summary>
+                <p>
+                    After reviewing we planned what we would do in the next sprint, what features we want to implement, what features need to be fixed and what our vision looks like for the project.
+                </p>
+            </details>
+            <details open>
+                <summary>Task for University</summary>
+                <p>
+                    Through the sprints we also needed to do tasks for the course itself. Task were mostly about the work behind developing a software: Doing research, drawing graphs or updating our project report.
+                </p>
+            </details>
+        </section>
+
+        <section class="t-card">
+            <details open>
+                <summary>My Part</summary>
+                <p>
+                I was mainly responsible for the parser and its underlying logic. 
+                My first approach used a parser built around predicate logic, but 
+                we eventually settled on a leaner solution using the parsing 
+                functions of <a href="https://github.com/gitpython-developers/gitpython">GitPython</a> 
+                and <a href="https://pypi.org/project/sexpdata/">sexpdata</a>.
+                </p>
+            </details>
+        </section>
+
+        <section class="t-card">
+            <h2>Tech Stack</h2>
+            <p>Code: <span class="t-badge t-info">Python</span></p>
+            <p>Version Control: <span class="t-badge t-info">Git</span></p>
+            <p>Documentation: <span class="t-badge t-info">MkDocs</span></p>
+            <p>Reporting: <span class="t-badge t-info">LaTex</span></p>
+        </section>
+
+        <section class="t-card">
+            <h2>Learning</h2>
+            <p>What did I learn from this experience?</p>
+            <p>Working in a team, working with SCRUM, developing software in increments, working with a company</p>
+        </section>
+
+    </main>
+
+    <site-footer></site-footer>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+</body>
+</html>

@@ -9,22 +9,25 @@
 <body>
     <site-header></site-header>
     <main>
+
         <section class="t-card hero">
             <h1><code>jannick@me:~$ whoami</code></h1>
             <p>
                 Hi, I'm <strong>Jannick</strong>. I'm a Computer Science student at Ruhr-Universität Bochum in my 5th semester, passionate about software development, hardware development, and building cool side projects.
             </p>
             <p>
-                <a href="/site/about"><button>Learn more about me &rarr;</button></a>
-                <a href="/site/projects/"><button>Learn about my Projects &rarr;</button></a>
+                <a href="/site/about" class="button">Learn more about me &rarr;</a>
+                <a href="/site/projects/" class="button">Learn about my Projects &rarr;</a>
             </p>
         </section>
+
         <section class="t-callout t-info">
             <strong>Currently focused on:</strong>
             Expanding my knowledge in Web Development (HTML/CSS, JS, TS & Frameworks).
         </section>
 
-        
+        <hr>
+
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="t-grid">
@@ -33,8 +36,8 @@
                     <div class="card-header">
                         <h3><code>01. jannick.me</code></h3>
                         <div>
-                            <a href="https://github.com/IchBinJannick/jannick.me"><button>View Code &rarr;</button></a>
-                            <a href="/site/projects/jannick.me/"><button>Read More &rarr;</button></a>
+                            <a href="https://github.com/IchBinJannick/jannick.me" class="button">View Code &rarr;</a>
+                            <a href="/site/projects/jannick.me/" class="button">Read More &rarr;</a>
                         </div> 
                     </div>
                     <p>My personal portfolio built with clean HTML and TermCSS. A testing ground for modern web features and simple terminal-like design.</p>
@@ -45,9 +48,28 @@
                     </p>
                 </article>
 
+                <article class="t-card">
+                    <div class="card-header">
+                        <h3><code>02. KiGit</code></h3>
+                        <div>
+                            <a href="https://github.com/IchBinJannick/KiGit" class="button">View Code &rarr;</a>
+                            <a href="/site/projects/kigit/" class="button">Read More &rarr;</a>
+                        </div>
+                    </div>
+                    <p>
+                        A CLI tool that helps users track changes made in KiCad projects with Git version control.
+                    </p>
+                    <p>
+                        <span class="t-badge t-info">Python</span>
+                    </p>
+                </article>
+
             </div>
+            <a href="/site/projects/" class="button">View More &rarr;</a>
         </section>
-        
+
+        <hr>
+
         <section class="t-card">
             <h2>Get in Touch</h2>
             <p>
