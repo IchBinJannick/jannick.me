@@ -30,7 +30,7 @@ contact.addEventListener("change", function() {
     }
 });
 
-form.addEventListener("submit", function(event) {
+form.addEventListener("submit", async function(event) {
     event.preventDefault();
     if (cname.value.trim() === "") {
         updateFormStatus(true, "Please enter your name!");
@@ -52,7 +52,7 @@ form.addEventListener("submit", function(event) {
         } 
     }
     try {
-        const response = await fetch("/api/contact"m {
+        const response = await fetch("/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -73,7 +73,7 @@ form.addEventListener("submit", function(event) {
 
         const data = await response.json();
 
-        updateFormStatus(message=data.message);
+        updateFormStatus(false, data.message);
 
     } catch (error) {
         console.error(error);
