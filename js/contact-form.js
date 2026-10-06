@@ -8,6 +8,7 @@ const field_discord = document.getElementById("discord-field");
 const discord = document.getElementById("discord");
 const formStatus = document.getElementById("form-status");
 
+
 function updateFormStatus(error = false, msg = "Successfully sent!") {
     formStatus.textContent = msg;
     formStatus.classList.remove("t-error", "t-success");
