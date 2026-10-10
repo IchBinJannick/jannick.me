@@ -47,27 +47,29 @@ function checkInput() {
 }
 
 async function sendAPI() {
-    const response = await fetch("/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                name: cname.value,
-                message: message.value,
-                contactMethod: contact.value,
-                credential: contact.value === "email"
-                    ? email.value
-                    : discord.value
-            })
-        });
-        if (!response.ok) {
-            throw new Error(`Server returned ${response.status}`);
-        }
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            access_key: "b97cb465-00b0-4548-b630-42822020bfd4",
+            name: cname.value,
+            message: message.value,
+            "contact-method": contact.value,
+            email: contact.value === "email" ? email.value : "",
+            discord: contact.value === "discord" ? discord.value : ""
+        })
+    });
 
-        const data = await response.json();
+    const data = await response.json();
 
-        updateFormStatus(false, data.message);
+    if (!response.ok || data.success !== true) {
+        throw new Error(data.message || `Server returned ${response.status}`);
+    }
+
+    updateFormStatus(false, data.message || "Successfully sent!");
 }
 
 async function submitForm(event) {
