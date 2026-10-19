@@ -1,4 +1,4 @@
-import toggleMode from "/js/lightdarkmode.js";
+import toggleMode from "./lightdarkmode.js";
 
 
 class SiteHeader extends HTMLElement {
