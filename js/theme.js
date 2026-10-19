@@ -8,3 +8,5 @@ function applyStoredTheme() {
     } 
     // if not: do nothing
 }
+
+applyStoredTheme();
