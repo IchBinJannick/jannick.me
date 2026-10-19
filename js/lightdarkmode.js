@@ -9,7 +9,7 @@ function applyStoredTheme() {
     // if not: do nothing
 }
 
-function toggleMode() {
+export default function toggleMode() {
     // when clicking button:
         // read current state
         const currentTheme = localStorage.getItem("theme");
