@@ -13,7 +13,6 @@ export default function toggleMode() {
             // safe in localStorage
             localStorage.setItem("theme", nextTheme);
             // change Button design
-        //location.reload();
-        }
-        
+        //location.reload();  
+        }     
 }

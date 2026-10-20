@@ -8,7 +8,7 @@ function applyStoredTheme() {
     } else {
         const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const defaultTheme = systemPrefersDark ? 'dark' : 'light';
-        document.documentElement.setAttribute("data-theme", defaultTheme);
+        localStorage.setItem("theme", defaultTheme);
     }
 }
 
